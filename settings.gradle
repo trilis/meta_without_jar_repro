@@ -1,0 +1,11 @@
+pluginManagement {
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == "kotlin2js") {
+                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:${requested.version}")
+            }
+        }
+    }
+}
+rootProject.name = 'meta_without_jar_repro'
+
